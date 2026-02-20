@@ -1,4 +1,3 @@
-m
 # 🐶 Dog Breed Identification using Deep Learning
 
 ## 📌 Overview
