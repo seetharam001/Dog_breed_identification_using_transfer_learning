@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="navbar">
+    <h2>DOG BREED</h2>
+    <div>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+    </div>
+</div>
+
+<section class="about-section">
+
+    <h5 class="section-small">ABOUT PROJECT</h5>
+    <h1 class="section-title">HOW THE SYSTEM WORKS</h1>
+
+    <div class="about-container">
+
+        <div class="about-box">
+            <div class="icon">📂</div>
+            <div>
+                <h3>Data Preparation</h3>
+                <p>
+                    The first step involves collecting the Stanford Dogs dataset which contains
+                    thousands of real-world dog images across multiple breeds. The images are cleaned,
+                    resized to a uniform resolution and organized into training, validation and testing
+                    sets. Data augmentation techniques such as rotation, zoom, flipping and brightness
+                    adjustments are applied to increase dataset diversity and help the model learn
+                    robust visual features.
+                </p>
+            </div>
+        </div>
+
+        <div class="about-box">
+            <div class="icon">⚙️</div>
+            <div>
+                <h3>Model Building</h3>
+                <p>
+                    The system uses Transfer Learning with the powerful VGG19 deep learning architecture.
+                    Instead of training from scratch, the pre-trained convolutional layers are reused to
+                    extract rich image features. Additional fully connected layers and dropout layers are
+                    added to adapt the network specifically for dog breed classification and to reduce
+                    overfitting.
+                </p>
+            </div>
+        </div>
+
+        <div class="about-box">
+            <div class="icon">📊</div>
+            <div>
+                <h3>Model Training & Evaluation</h3>
+                <p>
+                    The model is trained using batches of augmented images to improve generalization.
+                    During training, the network continuously updates its weights to minimize loss and
+                    improve prediction accuracy. The performance is evaluated using validation accuracy,
+                    loss curves and testing data to ensure the model performs reliably on unseen images.
+                </p>
+            </div>
+        </div>
+
+        <div class="about-box">
+            <div class="icon">🛡️</div>
+            <div>
+                <h3>Model Deployment</h3>
+                <p>
+                    After successful training, the model is integrated into a Flask web application.
+                    The application provides an easy-to-use interface where users can upload dog images
+                    and instantly receive breed predictions. This makes the deep learning model accessible
+                    and usable in real-world scenarios through a simple and interactive web platform.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>

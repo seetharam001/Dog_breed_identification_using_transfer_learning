@@ -1,0 +1,376 @@
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b0b0b;
+    color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: black;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+
+.hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b') center/cover;
+}
+
+.hero h1 {
+    font-size: 60px;
+}
+
+
+.upload-box {
+    background: white;
+    color: black;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+
+.result {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+
+
+.contact-section {
+    padding: 70px 80px;
+    background: #f5f5f5;
+}
+
+.section-small {
+    letter-spacing: 3px;
+    color: #999;
+}
+
+.section-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.contact-container {
+    display: flex;
+    gap: 40px;
+}
+
+
+.contact-info {
+    width: 35%;
+}
+
+.info-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.icon {
+    background: #f4b544;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+.contact-form {
+    width: 65%;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    border: 1px solid #d5c6c6;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+button {
+    background: #f4b544;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e3a531;
+}
+
+
+.contact-section,
+.contact-section h1,
+.contact-section h2,
+.contact-section h3,
+.contact-section h4,
+.contact-section h5,
+.contact-section p,
+.contact-section label {
+    color: #222;
+}
+
+@media(max-width:900px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+}
+
+
+
+
+.about-section {
+    padding: 70px 80px;
+    background: #f5f5f5;
+    color: #222;
+}
+
+.about-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.about-box {
+    display: flex;
+    gap: 20px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.about-box h3 {
+    margin-top: 0;
+}
+
+
+
+.hero-sub {
+    margin-top: 10px;
+    font-size: 18px;
+    max-width: 600px;
+    text-align: center;
+}
+
+
+.file-label {
+    display: block;
+    background: #f4b544;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.file-label input {
+    display: none;
+}
+
+.predict-btn {
+    width: 100%;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px;
+    background: #111;
+}
+
+.feature-box {
+    background: #1a1a1a;
+    padding: 25px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+/* FULL HERO CENTER */
+.hero {
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+
+.upload-card {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    width: 380px;
+    margin: auto;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* DRAG DROP AREA */
+.upload-area {
+    border: 2px dashed #ddd;
+    padding: 35px;
+    border-radius: 12px;
+    display: block;
+    cursor: pointer;
+    transition: 0.3s;
+    color: black;
+}
+
+.upload-area:hover {
+    border-color: #f4b544;
+    background: #fafafa;
+}
+
+.upload-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.upload-area input {
+    display: none;
+}
+
+.predict-btn {
+    width: 100%;
+    background: #f4b544;
+    border: none;
+    padding: 14px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.predict-btn:hover {
+    background: #e3a531;
+}
+
+.home-simple {
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home-simple h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.simple-upload {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+}
+
+.simple-upload input {
+    color: black;
+    margin-bottom: 15px;
+}
+
+.simple-upload button {
+    display: block;
+    width: 100%;
+}
+
+
+.home-simple {
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url("https://images.unsplash.com/photo-1548199973-03cce0bbc87b");
+    background-size: cover;
+    background-position: center;
+}
+
+.home-simple h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    color: #eee;
+    margin-bottom: 30px;
+}
+
+/* UPLOAD BOX */
+.simple-upload {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.simple-upload input {
+    color: black;
+    margin-bottom: 15px;
+}
+
+.simple-upload button {
+    display: block;
+    width: 100%;
+}

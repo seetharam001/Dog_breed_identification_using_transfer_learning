@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet"
+            href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+
+        <div class="navbar">
+            <h2>DOG BREED</h2>
+            <div>
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+            </div>
+        </div>
+
+        <section class="contact-section">
+
+            <h5 class="section-small">CONTACT</h5>
+            <h1 class="section-title">CONTACT US</h1>
+
+            <div class="contact-container">
+
+                <!-- LEFT INFO -->
+                <div class="contact-info">
+
+                    <div class="info-box">
+                        <div class="icon">📍</div>
+                        <div>
+                            <h3>Location:</h3>
+                            <p>Hyderabad, Telangana, India</p>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="icon">✉️</div>
+                        <div>
+                            <h3>Email:</h3>
+                            <p>info@dogbreed.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="icon">📞</div>
+                        <div>
+                            <h3>Call:</h3>
+                            <p>+91 987654321</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT FORM -->
+                <div class="contact-form">
+                    <form>
+                        <div class="row">
+                            <input type="text" placeholder="Your Name">
+                            <input type="email" placeholder="Your Email">
+                        </div>
+
+                        <input type="text" placeholder="Subject">
+                        <textarea rows="6" placeholder="Message"></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+    </body>
+</html>

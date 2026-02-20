@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dog Breed Identification</title>
+        <link rel="stylesheet"
+            href="{{ url_for('static', filename='style.css') }}">
+    </head>
+
+    <body>
+
+        <div class="navbar">
+            <h2>DOG BREED IDENTIFICATION</h2>
+            <div>
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+            </div>
+        </div>
+
+        <section class="home-simple">
+
+            <h1>Dog Breed Identification</h1>
+            <p class="tagline">Upload a dog image to predict the breed using
+                AI.</p>
+
+            <div class="simple-upload">
+                <form action="/predict" method="post"
+                    enctype="multipart/form-data">
+                    <input type="file" name="image" required>
+                    <button type="submit">Predict</button>
+                </form>
+            </div>
+
+        </section>
+
+        <script>
+window.onload = function() {
+    const form = document.querySelector("form");
+    form.reset();
+}
+</script>
+
+    </body>
+</html>

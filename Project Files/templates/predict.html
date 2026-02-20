@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Processing</title>
+    </head>
+    <body style="text-align:center; font-family:Arial">
+
+        <h1>Processing Image ⏳</h1>
+        <h2>Please wait while we predict the dog breed...</h2>
+
+        <script>
+            setTimeout(function () {
+            window.location.replace("/result?filepath={{ filepath | urlencode }}");
+            }, 500);
+        </script>
+    </body>
+</html>
